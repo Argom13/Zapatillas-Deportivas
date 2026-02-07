@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -20,20 +21,20 @@
                     <img class="bi me-2 rounded-circle" src="https://picsum.photos/id/100/60/60" alt="Logo Empresa" />
                 </a>
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="#" class="nav-link px-2 link-body-emphasis">Home</a></li>
+                    <li><a href="#home" class="nav-link px-2 link-body-emphasis">Home</a></li>
                     <li>
                         <div class="dropdown text-end"> <a href="#"
                                 class="nav-link px-2 link-body-emphasis dropdown-toggle" data-bs-toggle="dropdown"
                                 aria-expanded="false">Productos</a>
                             <ul class="dropdown-menu text-small">
-                                <li><a class="dropdown-item" href="#">Running</a></li>
-                                <li><a class="dropdown-item" href="#">Entrenamiento</a></li>
-                                <li><a class="dropdown-item" href="#">Lifestyle</a></li>
-                                <li><a class="dropdown-item" href="#">Edición Especial</a></li>
+                                <li><a class="dropdown-item" href="#running">Running</a></li>
+                                <li><a class="dropdown-item" href="#training">Entrenamiento</a></li>
+                                <li><a class="dropdown-item" href="#lifestyle">Lifestyle</a></li>
+                                <li><a class="dropdown-item" href="#special">Edición Especial</a></li>
                             </ul>
                         </div>
                     </li>
-                    <li><a href="#" class="nav-link px-2 link-body-emphasis">Contáctanos</a></li>
+                    <li><a href="#contact" class="nav-link px-2 link-body-emphasis">Contáctanos</a></li>
                 </ul>
             </div>
         </div>
@@ -53,37 +54,37 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="ratio ratio-21x9">
-                            <img src="https://picsum.photos/1200/675?image=1050"
+                            <img src="assets/running/running-1.avif"
                                 class="d-block w-100 h-100 object-fit-cover" alt="Zapatillas destacadas">
                         </div>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Nombre Producto</h5>
-                            <p>Precio</p>
-                            <button>Comprar Ahora</button>
+                        <div class="carousel-caption d-none d-md-block text-black">
+                            <h5>Velocity Aero</h5>
+                            <p>L.3,200</p>
+                            <button class="btn btn-primary">Comprar Ahora</button>
                             <p>Corre como los campeones. Tecnología que impulsa tu siguiente récord.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="ratio ratio-21x9">
-                            <img src="https://picsum.photos/1200/675?image=1060"
+                            <img src="assets/lifestyle/life-1.webp"
                                 class="d-block w-100 h-100 object-fit-cover" alt="Running shoe lateral">
                         </div>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
-                            <button>Comprar Ahora</button>
+                        <div class="carousel-caption d-none d-md-block text-black">
+                            <h5>Urban Drift</h5>
+                            <p>L.2,600</p>
+                            <button class="btn btn-primary" >Comprar Ahora</button>
                             <p>Corre como los campeones. Tecnología que impulsa tu siguiente récord.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="ratio ratio-21x9">
-                            <img src="https://picsum.photos/1200/675?image=1070"
+                            <img src="assets/specialEditions/special-1.jpg"
                                 class="d-block w-100 h-100 object-fit-cover" alt="Detalle de suela">
                         </div>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
-                            <button>Comprar Ahora</button>
+                        <div class="carousel-caption d-none d-md-block text-black">
+                            <h5>Olympic Velocity</h5>
+                            <p>L.4,500</p>
+                            <button class="btn btn-primary">Comprar Ahora</button>
                             <p>Corre como los campeones. Tecnología que impulsa tu siguiente récord.</p>
                         </div>
                     </div>
@@ -108,120 +109,110 @@
                 <div class="row">
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/running/running-1.avif" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Velocity Aero</h5>
+                                <p class="card-text">L.3,200</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/running/running-2.avif" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">StrideX Pro</h5>
+                                <p class="card-text">L.3,450</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/running/running-3.avif" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Horizon Flow</h5>
+                                <p class="card-text">L.3,600</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/running/running-4.avif" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Pulse Runner</h5>
+                                <p class="card-text">L.3,250</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/running/running-5.avif" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Enduro Glide</h5>
+                                <p class="card-text">L.3,550</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/running/running-6.avif" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">SwiftEdge</h5>
+                                <p class="card-text">L.3,300</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/running/running-7.avif" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Marathon Breeze</h5>
+                                <p class="card-text">L.3,700</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/running/running-8.avif" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Zenith Pace</h5>
+                                <p class="card-text">L.3,400</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/running/running-9.avif" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Flux Motion</h5>
+                                <p class="card-text">L.3,650</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/running/running-10.avif" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Trail Velocity</h5>
+                                <p class="card-text">L.3,500</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
@@ -236,120 +227,110 @@
                 <div class="row">
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/training/training-1.webp" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">CoreFlex</h5>
+                                <p class="card-text">L.2,800</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/training/training-2.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Titan Grip</h5>
+                                <p class="card-text">L.3,000</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/training/training-3.webp" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">PowerStride</h5>
+                                <p class="card-text">L.2,950</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/training/training-4.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">GymFlow</h5>
+                                <p class="card-text">L.2,700</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/training/training-5.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">MaxTorque</h5>
+                                <p class="card-text">L.3,100</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/training/training-6.webp" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">IronPulse</h5>
+                                <p class="card-text">L.2,850</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/training/training-7.webp" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">HybridForce</h5>
+                                <p class="card-text">L.3,050</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/training/training-8.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">LiftEdge</h5>
+                                <p class="card-text">L.2,900</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/training/training-9.webp" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">EnduroGym</h5>
+                                <p class="card-text">L.3,200</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/training/training-10.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Velocity Forge</h5>
+                                <p class="card-text">L.3,000</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
@@ -364,120 +345,110 @@
                 <div class="row">
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/lifestyle/life-1.webp" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Urban Drift</h5>
+                                <p class="card-text">L.2,600</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/lifestyle/life-2.webp" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">StreetFlex</h5>
+                                <p class="card-text">L.2,750</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/lifestyle/life-3.webp" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">MetroFlow</h5>
+                                <p class="card-text">L.2,800</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/lifestyle/life-4.webp" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Skyline Pace</h5>
+                                <p class="card-text">L.2,900</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/lifestyle/life-5.webp" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">ChillStride</h5>
+                                <p class="card-text">L.2,650</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/lifestyle/life-6.webp" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">CityRunner</h5>
+                                <p class="card-text">L.2,700</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/lifestyle/life-7.webp" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">NeoStreet</h5>
+                                <p class="card-text">L.2,850</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/lifestyle/life-8.webp" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Pulse Urban</h5>
+                                <p class="card-text">L.2,950</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/lifestyle/life-9.avif" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Horizon Casual</h5>
+                                <p class="card-text">L.2,750</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/lifestyle/life-10.avif" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Velocity Street</h5>
+                                <p class="card-text">L.2,800</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
@@ -492,120 +463,110 @@
                 <div class="row">
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/specialEditions/special-1.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Olympic Velocity</h5>
+                                <p class="card-text">L.4,500</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/specialEditions/special-2.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">GoldStride Limited</h5>
+                                <p class="card-text">L.4,200</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/specialEditions/special-3.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Velocity Flame</h5>
+                                <p class="card-text">L.4,000</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/specialEditions/special-4.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Titan Legacy</h5>
+                                <p class="card-text">L.4,300</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/specialEditions/special-5.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">PulseX Elite</h5>
+                                <p class="card-text">L.4,100</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/specialEditions/special-6.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Horizon Rare</h5>
+                                <p class="card-text">L.4,250</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/specialEditions/special-7.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Zenith Collector</h5>
+                                <p class="card-text">L.4,350</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/specialEditions/special-8.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Flux Limited</h5>
+                                <p class="card-text">L.4,150</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/specialEditions/special-9.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Marathon Tribute</h5>
+                                <p class="card-text">L.4,400</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm d-flex justify-content-center mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://picsum.photos/id/10/250/250" alt="Card image cap">
+                            <img class="card-img-top" src="assets/specialEditions/special-10.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Velocity Signature</h5>
+                                <p class="card-text">L.4,600</p>
+                                <a href="#" class="btn btn-primary">Añadir al carrito</a>
                             </div>
                         </div>
                     </div>
@@ -616,22 +577,95 @@
         <section>
             <div class="card d-flex justify-content-center align-items-center">
                 <div class="card-header">
-                    Quote
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7GIwUouhzMQ"
+                            allowfullscreen></iframe>
+                    </div>
                 </div>
                 <div class="card-body">
                     <blockquote class="blockquote mb-0">
-                        <p>A well-known quote, contained in a blockquote element.</p>
-                        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source
-                                Title</cite></footer>
+                        <p>Desde que uso las Velocity X-Pro, siento que vuelo en cada zancada. Comodidad,
+                            ligereza y potencia en un solo paso.</p>
+                        <footer class="blockquote-footer">Camila Torres <cite title="Source Title"> Campeona Olímpica
+                                800m</cite></footer>
                     </blockquote>
                 </div>
             </div>
         </section>
 
+        <section>
+
+            <div class="mt-5 border rounded-5">
+                <h3 class="d-flex justify-content-center pt-3">Recibe lanzamientos exclusivos y promociones de primera
+                    línea
+                </h3>
+                <section class="w-100 p-4 d-flex justify-content-center pb-4">
+
+                    <form style="width: 22rem;">
+
+                        <div data-mdb-input-init="" class="form-outline mb-4" data-mdb-input-initialized="true">
+                            <input type="email" id="form2Example1" class="form-control">
+                            <label class="form-label" for="form2Example1" style="margin-left: 0px;">Email
+                                address</label>
+                            <div class="form-notch">
+                                <div class="form-notch-leading" style="width: 9px;"></div>
+                                <div class="form-notch-middle" style="width: 88.8px;"></div>
+                                <div class="form-notch-trailing"></div>
+                            </div>
+                        </div>
+
+                        <div data-mdb-input-init="" class="form-outline mb-4" data-mdb-input-initialized="true">
+                            <input type="password" id="form2Example2" class="form-control">
+                            <label class="form-label" for="form2Example2" style="margin-left: 0px;">Password</label>
+                            <div class="form-notch">
+                                <div class="form-notch-leading" style="width: 9px;"></div>
+                                <div class="form-notch-middle" style="width: 64px;"></div>
+                                <div class="form-notch-trailing"></div>
+                            </div>
+                        </div>
+
+                        <button type="button" data-mdb-button-init="" data-mdb-ripple-init=""
+                            class="btn btn-primary btn-block mb-4"
+                            data-mdb-button-initialized="true">Registrarse</button>
+
+
+                    </form>
+                </section>
+
+
+            </div>
+        </section>
+
+
     </main>
 
-    <footer>
+    <footer id="contact" class="py-3 my-4 ">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3 ">
+            <li class="nav-item"><a href="#home" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li>
+                        <div class="dropdown text-end"> <a href="#"
+                                class="nav-link px-2 text-body-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">Productos</a>
+                            <ul class="dropdown-menu text-small">
+                                <li><a class="dropdown-item" href="#running">Running</a></li>
+                                <li><a class="dropdown-item" href="#training">Entrenamiento</a></li>
+                                <li><a class="dropdown-item" href="#lifestyle">Lifestyle</a></li>
+                                <li><a class="dropdown-item" href="#special">Edición Especial</a></li>
+                            </ul>
+                        </div>
+                    </li>
+            <li class="nav-item"><a href="#contact" class="nav-link px-2 text-body-secondary">Contáctanos</a></li>
+            <li class="ms-3"><a class="bi-instagram" href="#" aria-label="Instagram"><svg class="bi" width="24"
+                        height="24" aria-hidden="true">
+                        <use xlink:href="#instagram"></use>
+                    </svg></a></li>
+            <li class="ms-3"><a class="bi bi-facebook" href="#" aria-label="Facebook"><svg class="bi" width="24"
+                        height="24">
+                        <use xlink:href="#facebook"></use>
+                    </svg></a></li>
+        </ul>
 
+        <p class="text-center text-body-secondary">© 2025 Company, Inc</p>
     </footer>
 </body>
 
